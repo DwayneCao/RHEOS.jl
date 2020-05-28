@@ -208,7 +208,7 @@ function importJPK(filepath::String, interface::Interface; sections::Array{Strin
  
         min_disp = findmin(disp)[1]
 
-        data = RheoTimeData(t = data_raw[i_start:i_end, t_col], ϵ = disp .- min_disp[1], σ = data_raw[i_start:i_end, f_col])
+        data = RheoTimeData(t = data_raw[i_start:i_end, t_col], ϵ = disp .- min_disp[1], σ = data_raw[i_start:i_end, f_col].-data_raw[i_start, f_col])
 
     end
 

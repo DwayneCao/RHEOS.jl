@@ -10,7 +10,6 @@ using JLD2
 using DataStructures
 using FunctionWrappers: FunctionWrapper
 import DSP.conv
-import Statistics.mean
 
 # Base and stdlib imports
 import Base: +, -, *,|
